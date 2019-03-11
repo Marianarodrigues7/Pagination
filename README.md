@@ -1,6 +1,6 @@
 # Pagination
-An example of pagination in Javascript with test unis in QUnit. 
-The goal is to paginate number of pages minding a current page, total of pages, boundaries and neighbour pages of the current page (around).
+An example of pagination in **Javascript** complemented with unit tests in **QUnit**. 
+The goal is to paginate a number of pages minding a selected page, total of pages, boundaries and neighbour pages of the current page (around).
 
 # Files
 ## Pagination.js
@@ -14,8 +14,28 @@ This is where the calculation of pagination goes. Here you can find the function
 |boundaries      |Boundaries of Pages / Limit of Pages|Number	  |
 |around 		 |Neighbour Pages of Current Page|Number 		  |
 
-## Tests.Html
+## Tests.html
 
-For the tests, QUnit was chosen as test runner, executing them in an html file.
-To run the existing tests, please open the file tests.html in a browser.
+For the tests, **QUnit** was chosen as test runner, executing them in an HTML file.
+To run the existing tests, please run the file tests.html in a browser.
 
+ - The existing tests can be found at **tests/pagination.test.js**.
+
+# Usage
+
+ ### Import the following scripts:
+ ```html
+ <script  src="src/pagination.js"></script>
+```
+
+ ### Assign the function result to the text element 
+ ```html
+<p id="txtNav"><\p>
+
+ <script>
+	document.getElementById("txtNav").innerHTML = paginate(4,10,2,2);
+</script>
+```
+
+#### Output 
+```1 2 3 4 5 6 ... 9 10```
