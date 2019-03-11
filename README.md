@@ -39,3 +39,6 @@ To run the existing tests, please run the file tests.html in a browser.
 
 #### Output 
 ```1 2 3 4 5 6 ... 9 10```
+
+## Demo
+You can use the demo.html, inside the folder demo, to check the output and try new tests.
