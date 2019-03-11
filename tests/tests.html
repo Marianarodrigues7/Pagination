@@ -1,0 +1,27 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Pagination Tests</title>
+</head>
+
+<body>
+    <p id="txtNav">
+
+    </p>
+    <!-- <div id="qunit"></div> -->
+    
+    <link rel="stylesheet" href="https://code.jquery.com/qunit/qunit-2.9.2.css">
+    <script src="https://code.jquery.com/qunit/qunit-2.9.2.js"></script>
+
+    <script src="../src/pagination.js"></script>
+    <script src="pagination.test.js"></script>
+
+    <script>
+        document.getElementById("txtNav").innerHTML = paginate(1, 2, 3, 4);
+    </script>
+
+</body>
+
+</html>
