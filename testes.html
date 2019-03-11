@@ -19,6 +19,9 @@
             assert.equal(paginate(4, 10, 0, 0), "... 4 ...");
             assert.equal(paginate(3, 5, 0, 1), "... 2 3 4 ...");
         });
+        QUnit.test("Paginate Basics: Current Page Greater than Total of Pages", function (assert) {
+            assert.equal(paginate(9, 5, 0, 1), "...");
+        });
         QUnit.test("Paginate Negatives: Current Page", function (assert) {
             assert.expect(1);
             assert.throws(
