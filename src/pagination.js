@@ -18,11 +18,11 @@ function paginate(currentPage, totalPages, boundaries, around) {
     var pagination = "";
 
     if (isNegative(currentPage) || isNegative(totalPages) || isNegative(boundaries) || isNegative(around)) {
-        throw Error("Por favor insira um número positivo");
+        throw Error("Please insert a number equal or bigger than zero");
     }
 
     if (isNotaNumber(currentPage) || isNotaNumber(totalPages) || isNotaNumber(boundaries) || isNotaNumber(around)) {
-        throw Error("Por favor insira um número");
+        throw Error("Please insert a number");
     }
 
     for (var i = 1; i <= totalPages; i++) {
